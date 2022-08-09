@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos</title>
+</head>
+<body>
+    <h1>MEus contatos</h1>
+    <ul>
+        <li>Telefone: 998041133</li>
+        <li>email: raontp@hotmail.com</li>
+        <li>facebook: raonpitombeira</li>
+    </ul>
+   <h3>Esse primeiro formulário tem como action a página de produtos</h3>
+    <form action="../Produtos/produtos.html"> <!-- o dois pontos quer dizer duas pastar a cima, um ponto seria a pasta contato, ai dois pontos podemos acessar o index-->
+        <label >Nome completo:</label><br/>
+        <input type="text"><br/><br/>
+        <label for="">E-mail:</label><br/>
+        <input type="email"><br/><br/>
+        <label for="">Sua mensagem:</label><br/>
+        <textarea cols="30" rows="10"></textarea>
+        <input type="submit">
+    </form>
+    <hr size="2" noshade="">
+    <h3>Esse segundo formulário teremos como action enviar para meu email</h3>
+    <form action="mailto:raontp@hotmail.com" method="post" enctype="text/plain">
+        <label for="">Nome completo</label><br?>
+        <input type="text" name="nome"> <br/>
+        <label for="">E-mail</label>
+        <input type="email" name="email"> <br/>
+        <textarea name="mensagem" id="" cols="30" rows="10" ></textarea>
+        <input type="submit" > <br/>
+
+
+
+    </form>
+
+    
+</body>
+</html>
